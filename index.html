@@ -7,25 +7,35 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Pacifico|Roboto+Condensed" rel="stylesheet">
 
   <style type="text/css">
     #mypage {
       margin-top: 50px;
       background-color: #aaa;
+      padding-bottom: 15px;
     }
     #mypage img{
       margin-top: 20px;
     }
     #message{
       background-color: #333;
+      color: #fff;
+      font-size: 20px;
+      padding-top: 15px;
+      padding-bottom: 15px;
     }
     #gallery{
       background-color: #aaa;
       padding-top: 20px;
       padding-bottom: 20px;
     }
+    #gallery h3{
+      padding-bottom: 10px;
+    }
     .col-sm-4{
       padding-bottom: 20px;
+      font-family: 'Roboto Condensed', sans-serif;
     }
     #places{
       background-color: #333;
@@ -55,7 +65,7 @@
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#message">MESSAGE</a></li>
         <li><a href="#gallery">GALLERY</a></li>
-        <li><a href="#places">PLACES</a></li>
+       
       </ul>
     </div>
   </div>
@@ -63,19 +73,29 @@
 
 <div id="mypage" class="container bg-1 text-center">
   <img src="babyimogen.jpg" class="img-responsive img-circle margin" style="display:inline" alt="Baby Imogen" width="350" height="350">
-  <h3 style="font-size: 42px;"><strong>Happy Birthday Imogen!</strong></h3>
-  <h3>I hope you enjoy all that you see!</h3>
+  <h3 style="font-size: 42px; font-family: 'Pacifico', cursive;"><strong>Happy Birthday Imogen!</strong></h3>
+  <h3 style="font-family: 'Pacifico', cursive;">I hope you enjoy all that you see!</h3>
 </div>
 
 <div id="message" class="container text-center">
 
+  <p>Imogen, from the first day that I saw you I knew that you were the one for me. 
+    Everytime that I see your face it instanly makes my day better, from the moment that I wake
+    I can't wait for you to wake, just so we can talk again. I know that this isn't much but I wanted
+    to give you something with a more personal touch, something that I made just for you. I hope you have a 
+    great birthday and I hope that we have many more over to share.</p>
+    <br>
+  <p>I love you,</p>
+  <p>Damien</p>
   <div class="glyphicon glyphicon-heart">
   </div>
 
 </div>
 
 <div class="container text-center">
+
   <div id="gallery" class="row">
+      <h3 style="font-family: 'Pacifico', cursive;">Click each of me!</h3>
     <div class="col-sm-4">
       
       <a href="#demo" data-toggle="collapse">
@@ -83,7 +103,7 @@
       </a>
       <div id="demo" class="collapse">
         <br>
-        <p>You may be weird</p>
+        <p style="font-size: 24px;">You may be weird</p>
       </div>
     </div>
     
@@ -94,7 +114,7 @@
       </a>
       <div id="demo2" class="collapse">
         <br>
-        <p>And a drunk</p>
+        <p style="font-size: 24px;">And a drunk</p>
       </div>
     </div>
 
@@ -105,8 +125,8 @@
       </a>
       <div id="demo3" class="collapse">
         <br>
-        <p>And a baby</p>
-        <p>But I still love you!</p>
+        <p style="font-size: 24px;">And a baby</p>
+        <p style="font-size: 24px;">But I still love you!</p>
       </div>
     </div>
     
@@ -116,28 +136,28 @@
     <div class="col-sm-4">
       <div class="thumbnail">
         <img src="edinburgh.jpg" alt="Edinburgh">
-        <p><strong>Edinburgh</strong></p>
+        <p style="font-size: 16px;"><strong>Edinburgh</strong></p>
         <p>21 October 2016</p>
       </div>
     </div>
     <div class="col-sm-4">
       <div class="thumbnail">
         <img src="amsterdam.jpg" alt="Amsterdam">
-        <p><strong>Amsterdam?</strong></p>
+        <p style="font-size: 16px;"><strong>Amsterdam?</strong></p>
         <p>2017?</p>
       </div>
     </div>
     <div class="col-sm-4">
       <div class="thumbnail">
         <img src="futuretrips.jpg" alt="Where next?">
-        <p><strong>Hopefully many more</strong></p>
+        <p style="font-size: 16px;"><strong>Hopefully many more</strong></p>
         <p>2017+</p>
       </div>
     </div>
   </div>
 </div>
 
-<footer style="text-align: center;">
+<footer style="background-color: #aaa; padding: 4px;" class="container text-center">
   <p>&copy;Damien Elliott 2017</p>
 </footer>
 </body>
