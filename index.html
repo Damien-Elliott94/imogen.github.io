@@ -5,50 +5,11 @@
   <title>Imogen</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel ="stylesheet" href="css/style.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Pacifico|Roboto+Condensed" rel="stylesheet">
 
-  <style type="text/css">
-    #mypage {
-      margin-top: 50px;
-      background-color: #aaa;
-      padding-bottom: 15px;
-    }
-    #mypage img{
-      margin-top: 20px;
-    }
-    #message{
-      background-color: #333;
-      color: #fff;
-      font-size: 20px;
-      padding-top: 50px;
-      padding-bottom: 15px;
-    }
-    #gallery{
-      background-color: #aaa;
-      padding-top: 50px;
-      padding-bottom: 20px;
-    }
-    #gallery h3{
-      padding-bottom: 10px;
-    }
-    .col-sm-4{
-      padding-bottom: 20px;
-      font-family: 'Roboto Condensed', sans-serif;
-    }
-    #places{
-      background-color: #333;
-      padding: 20px;
-    }
-    .person{
-      height: 250px;
-      width: 250px;
-    }
-    .glyphicon {
-      color: #fff;
-    }
-  </style>
 </head>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
 <nav class="navbar navbar-default navbar-fixed-top">
@@ -59,10 +20,10 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand" href="#myPage">Imogen</a>
+      <a id="nav-title" class="navbar-brand" href="#myPage">Imogen</a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav navbar-right">
+      <ul id="nav-elements" class="nav navbar-nav navbar-right">
         <li><a href="#message">MESSAGE</a></li>
         <li><a href="#gallery">GALLERY</a></li>
         <li><a href="#places">PLACES</a></li>
@@ -136,43 +97,74 @@
   <div id="places" class="row text-center">
     <div class="col-sm-4">
       <div class="thumbnail">
-        <img src="edinburgh.jpg" alt="Edinburgh">
-        <p style="font-size: 16px;"><strong>Edinburgh</strong></p>
-        <p>21 October 2016</p>
+        <img class="thumbnail-img" src="edinburgh.jpg" alt="Edinburgh, UK">
+        <p style="font-size: 16px;"><strong>Edinburgh, UK</strong></p>
+        <p>October 2016</p>
       </div>
     </div>
     <div class="col-sm-4">
       <div class="thumbnail">
-        <img src="amsterdam.jpg" alt="Amsterdam">
-        <p style="font-size: 16px;"><strong>Amsterdam</strong></p>
-        <p>25th April 2017</p> 
+        <img class="thumbnail-img" src="amsterdam.jpg" alt="Amsterdam, Netherlands">
+        <p style="font-size: 16px;"><strong>Amsterdam, Netherlands</strong></p>
+        <p>April 2017</p> 
       </div>
     </div>
     <div class="col-sm-4">
       <div class="thumbnail">
-        <img src="alicante.jpg" alt="Alicante">
-        <p style="font-size: 16px;"><strong>Alicante</strong></p>
-        <p>15th July 2017</p>
+        <img class="thumbnail-img" src="alicante.jpg" alt="Alicante, Spain">
+        <p style="font-size: 16px;"><strong>Alicante, Spain</strong></p>
+        <p>July 2017</p>
       </div>
     </div>
   </div>
   <div id="places" class="row text-center">
     <div class="col-sm-4">
       <div class="thumbnail">
-        <img src="lake.jpg" alt="Lake District">
-        <p style="font-size: 16px;"><strong>Lake District</strong></p>
-        <p>13th November 2017</p>
+        <img class="thumbnail-img" src="lake.jpg" alt="Lake District, UK">
+        <p style="font-size: 16px;"><strong>Lake District, UK</strong></p>
+        <p>November 2017</p>
       </div>
     </div>
     <div class="col-sm-4">
       <div class="thumbnail">
-        <img src="iceland.jpg" alt="Where next?">
-        <p style="font-size: 16px;"><strong>Hopefully many more</strong></p>
-        <p>tbd?</p>
+        <img class="thumbnail-img" src="york.jpg" alt="York, UK">
+        <p style="font-size: 16px;"><strong>York, UK</strong></p>
+        <p>September 2018</p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img class="thumbnail-img" src="dublin.jpg" alt="Dublin, Ireland">
+        <p style="font-size: 16px;"><strong>Dublin, Ireland</strong></p>
+        <p>February 2019</p>
+      </div>
+    </div>
+  </div>
+  <div id="places" class="row text-center">
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img class="thumbnail-img" src="northumberland.jpeg" alt="Northumberland, UK">
+        <p style="font-size: 16px;"><strong>Northumberland, UK</strong></p>
+        <p>December 2019</p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img class="thumbnail-img" src="lake.jpg" alt="Lake District, UK">
+        <p style="font-size: 16px;"><strong>Lake District, UK</strong></p>
+        <p>February 2022</p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img class="thumbnail-img" src="question.jpeg" alt="Honeymoon">
+        <p style="font-size: 16px;"><strong>Honeymoon</strong></p>
+        <p>TBC</p>
       </div>
     </div>
   </div>
 </div>
+
 
 <footer style="background-color: #aaa; padding: 4px;" class="container text-center">
   <p>&copy;Damien Elliott 2018</p>
